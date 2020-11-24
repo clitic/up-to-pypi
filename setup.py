@@ -25,7 +25,7 @@ setup(
     packages=["up_to_pypi"],
     package_data={'up_to_pypi':['*.pyw', 'assets/*ui','images/*.png', 'assets/*.xml']},
     include_package_data=True,
-    install_requires=["PyQt5", "pyqt5_material", "twine"],
+    install_requires=["PyQt5", "pyqt5_material", "twine", "jinja2"],
     entry_points={
         "console_scripts": [
             "up-to-pypi=up_to_pypi.main:main",
