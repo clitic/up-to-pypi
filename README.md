@@ -1,12 +1,13 @@
 # Up To PyPi
 [![Total Downloads](https://pepy.tech/badge/up-to-pypi)](https://pypi.org/project/up-to-pypi/)
 [![PyPI Package Version](https://badge.fury.io/py/up-to-pypi.svg)](https://pypi.org/project/up-to-pypi/)
+[![Generic badge](https://img.shields.io/badge/size-dc-blue.svg)](https://github.com/360modder/up-to-pypi/)
 
 A PyQt5 GUI Uploder For Uploading Packages To PyPi
 
 ## Links
 1. [PyPi](https://pypi.org/project/up-to-pypi/ "up-to-pypi PyPi Homepage")
-2. [Github](https://github.com/360modder/up-to-pypi "up-to-pypi Github Homepage")
+2. [Github](https://github.com/360modder/up-to-pypi/ "up-to-pypi Github Homepage")
 
 ## Installation
 
