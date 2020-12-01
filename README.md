@@ -1,5 +1,5 @@
 # Up To PyPi
-[![Total Downloads](https://pepy.tech/badge/up-to-pypi)](https://pepy.tech/project/up-to-pypi)
+[![Total Downloads](https://pepy.tech/badge/up-to-pypi)](https://pypi.org/project/up-to-pypi/)
 
 A PyQt5 GUI Uploder For Uploading Packages To PyPi
 
