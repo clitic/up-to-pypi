@@ -22,19 +22,24 @@ OR
 
 ```uptopypi```
 
-Both are equivalent
+OR
+
+```up_to_pypi```
+
+All are equivalent
 
 ## UI Preview
 
-![Main UI](https://raw.githubusercontent.com/360modder/up-to-pypi/main/preview/preview_image1.jpg)
+![Main UI1](https://raw.githubusercontent.com/360modder/up-to-pypi/main/preview/preview_image3.jpg)
+![Main UI2](https://raw.githubusercontent.com/360modder/up-to-pypi/main/preview/preview_image4.jpg)
 
 ## Working
 
-![Working](https://raw.githubusercontent.com/360modder/up-to-pypi/main/preview/preview_image2.gif)
+![Working](https://raw.githubusercontent.com/360modder/up-to-pypi/main/preview/preview_image5.gif)
 
 ## Other Modules Used
 1. [PyQt5](https://pypi.org/project/PyQt5/ "PyQt5 PyPi Homepage")
-2. [pyqt5_material](https://pypi.org/project/pyqt5-material/ "pyqt5_material PyPi Homepage")
+2. [qtmodern](https://pypi.org/project/qtmodern/ "qtmodern PyPi Homepage")
 3. [twine](https://pypi.org/project/twine/ "twine PyPi Homepage")
 
 Special Thanks To [Niels Boehm (blubberdiblub)](https://gist.github.com/blubberdiblub) For The Code Of [sub_qt.py](https://gist.github.com/blubberdiblub/007bb92991d01ad29877931f75260b39)
