@@ -47,6 +47,11 @@ All are equivalent
 
 Special Thanks To [Niels Boehm (blubberdiblub)](https://gist.github.com/blubberdiblub) For The Code Of [sub_qt.py](https://gist.github.com/blubberdiblub/007bb92991d01ad29877931f75260b39)
 
+## Changelogs
+
+- [v1.0.9](https://github.com/360modder/up-to-pypi/releases/tag/v1.0.9)
+~ [v1.0.8](https://github.com/360modder/up-to-pypi/releases/tag/v1.0.8)
+
 ## License
 
 © 2020 360modder
