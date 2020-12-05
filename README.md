@@ -6,6 +6,8 @@
 
 A PyQt5 GUI Uploder For Uploading Packages To PyPi
 
+Currently It Only [![Size](https://img.shields.io/badge/supports-windows-blue.svg)]()
+
 ## Links
 1. [PyPi](https://pypi.org/project/up-to-pypi/ "up-to-pypi PyPi Homepage")
 2. [Github](https://github.com/360modder/up-to-pypi/ "up-to-pypi Github Homepage")
