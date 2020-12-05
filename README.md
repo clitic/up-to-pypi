@@ -2,7 +2,7 @@
 
 [![Total Downloads](https://pepy.tech/badge/up-to-pypi)](https://pypi.org/project/up-to-pypi/)
 [![PyPI Package Version](https://badge.fury.io/py/up-to-pypi.svg)](https://pypi.org/project/up-to-pypi/)
-[![Size](https://img.shields.io/badge/size-154.95kb-blue.svg)](https://codeload.github.com/360modder/up-to-pypi/zip/main)
+[![Size](https://img.shields.io/badge/size-154.95kb-blue.svg?style=for-the-badge&logo=appveyor)](https://codeload.github.com/360modder/up-to-pypi/zip/main)
 
 A PyQt5 GUI Uploder For Uploading Packages To PyPi
 
