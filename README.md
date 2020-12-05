@@ -3,7 +3,6 @@
 [![Total Downloads](https://pepy.tech/badge/up-to-pypi)](https://pypi.org/project/up-to-pypi/)
 [![PyPI Package Version](https://badge.fury.io/py/up-to-pypi.svg)](https://pypi.org/project/up-to-pypi/)
 [![Supports](https://img.shields.io/badge/supports-windows-blue.svg)](https://github.com/360modder/up-to-pypi/blob/main/up_to_pypi/main.pyw)
-[![Repo Size](https://img.shields.io/badge/repo_size-154.95kb-blue.svg)](https://codeload.github.com/360modder/up-to-pypi/zip/main)
 
 A PyQt5 GUI Uploder For Uploading Packages To PyPi
 
@@ -47,6 +46,12 @@ All are equivalent
 - [twine](https://pypi.org/project/twine/ "twine PyPi Homepage")
 
 Special Thanks To [Niels Boehm (blubberdiblub)](https://gist.github.com/blubberdiblub) For The Code Of [sub_qt.py](https://gist.github.com/blubberdiblub/007bb92991d01ad29877931f75260b39)
+
+## Load Faster
+
+```
+pip install PyQt5 qtmodern
+```
 
 ## Changelogs
 
