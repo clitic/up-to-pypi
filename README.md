@@ -10,8 +10,9 @@ A PyQt5 GUI Uploder For Uploading Packages To PyPi
 Currently It Only Supports Windows
 
 ## Links
-1. [PyPi](https://pypi.org/project/up-to-pypi/ "up-to-pypi PyPi Homepage")
-2. [Github](https://github.com/360modder/up-to-pypi/ "up-to-pypi Github Homepage")
+
+- [PyPi](https://pypi.org/project/up-to-pypi/ "up-to-pypi PyPi Homepage")
+- [Github](https://github.com/360modder/up-to-pypi/ "up-to-pypi Github Homepage")
 
 ## Installation
 
@@ -41,16 +42,16 @@ All are equivalent
 ![Working](https://raw.githubusercontent.com/360modder/up-to-pypi/main/preview/preview_image5.gif)
 
 ## Other Modules Used
-1. [PyQt5](https://pypi.org/project/PyQt5/ "PyQt5 PyPi Homepage")
-2. [qtmodern](https://pypi.org/project/qtmodern/ "qtmodern PyPi Homepage")
-3. [twine](https://pypi.org/project/twine/ "twine PyPi Homepage")
+- [PyQt5](https://pypi.org/project/PyQt5/ "PyQt5 PyPi Homepage")
+- [qtmodern](https://pypi.org/project/qtmodern/ "qtmodern PyPi Homepage")
+- [twine](https://pypi.org/project/twine/ "twine PyPi Homepage")
 
 Special Thanks To [Niels Boehm (blubberdiblub)](https://gist.github.com/blubberdiblub) For The Code Of [sub_qt.py](https://gist.github.com/blubberdiblub/007bb92991d01ad29877931f75260b39)
 
 ## Changelogs
 
 - [v1.0.9](https://github.com/360modder/up-to-pypi/releases/tag/v1.0.9)
-~ [v1.0.8](https://github.com/360modder/up-to-pypi/releases/tag/v1.0.8)
+- [v1.0.8](https://github.com/360modder/up-to-pypi/releases/tag/v1.0.8)
 
 ## License
 
