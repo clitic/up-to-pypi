@@ -31,7 +31,12 @@ Currently It Only Supports Windows
 
 ## UI Preview
 
+### Main UI
+
 ![Uploader](https://raw.githubusercontent.com/360modder/up-to-pypi/main/preview/preview_image6.jpg)
+
+### Advance Wheel Creator
+
 ![AWC](https://raw.githubusercontent.com/360modder/up-to-pypi/main/preview/preview_image7.jpg)
 
 ## Working
