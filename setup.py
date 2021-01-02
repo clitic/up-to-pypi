@@ -12,7 +12,7 @@ if __name__ == '__main__':
     if plat.lower().startswith("win") == True:
         setup(
             name="up_to_pypi",
-            version="1.0.9",
+            version="2.0.0",
             description="A PyQt5 GUI Uploder For Uploading Packages To PyPi",
             long_description=README,
             long_description_content_type="text/markdown",
@@ -29,14 +29,13 @@ if __name__ == '__main__':
                 "Programming Language :: Python :: 3.8",
             ],
             packages=["up_to_pypi"],
-            package_data={'up_to_pypi':['*.pyw', '*.exe', 'assets/*ui','images/*.png','images/*.ico', 'assets/*.txt']},
+            package_data={'up_to_pypi':['*.pyw', 'assets/*ui','images/*.png','images/*.ico', 'assets/*.txt']},
             include_package_data=True,
-            install_requires=["twine", "jinja2"],
+            install_requires=["PyQt5", "qtpy", "qtmodern", "twine"],
             entry_points={
                 "console_scripts": [
                     "up-to-pypi=up_to_pypi.launcher:main",
-                    "uptopypi=up_to_pypi.launcher:main",
-                    "up_to_pypi=up_to_pypi.launcher:main",
+                    "awc=up_to_pypi.launcher:awc",
                 ]
             },
         )

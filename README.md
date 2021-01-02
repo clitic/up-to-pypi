@@ -6,6 +6,8 @@
 
 A PyQt5 GUI Uploder For Uploading Packages To PyPi
 
+Advance Wheel Creator Added For Creating More Advance Wheels For Modules
+
 Currently It Only Supports Windows
 
 ## Links
@@ -19,22 +21,18 @@ Currently It Only Supports Windows
 
 ## Usage (Command Line)
 
+### Main UI
+
 ```up-to-pypi```
 
-OR
+### Advance Wheel Creator
 
-```uptopypi```
-
-OR
-
-```up_to_pypi```
-
-All are equivalent
+```awc```
 
 ## UI Preview
 
-![Main UI1](https://raw.githubusercontent.com/360modder/up-to-pypi/main/preview/preview_image3.jpg)
-![Main UI2](https://raw.githubusercontent.com/360modder/up-to-pypi/main/preview/preview_image4.jpg)
+![Uploader](https://raw.githubusercontent.com/360modder/up-to-pypi/main/preview/preview_image6.jpg)
+![AWC](https://raw.githubusercontent.com/360modder/up-to-pypi/main/preview/preview_image7.jpg)
 
 ## Working
 
@@ -43,18 +41,18 @@ All are equivalent
 ## Other Modules Used
 - [PyQt5](https://pypi.org/project/PyQt5/ "PyQt5 PyPi Homepage")
 - [qtmodern](https://pypi.org/project/qtmodern/ "qtmodern PyPi Homepage")
-- [twine](https://pypi.org/project/twine/ "twine PyPi Homepage")
 
 Special Thanks To [Niels Boehm (blubberdiblub)](https://gist.github.com/blubberdiblub) For The Code Of [sub_qt.py](https://gist.github.com/blubberdiblub/007bb92991d01ad29877931f75260b39)
 
-## Load Faster
+## Dependencies
 
 ```
-pip install PyQt5 qtmodern
+pip install PyQt5 qtmodern qtpy twine
 ```
 
 ## Changelogs
 
+- [v2.0.0](https://github.com/360modder/up-to-pypi/releases/tag/v2.0.0)
 - [v1.0.9](https://github.com/360modder/up-to-pypi/releases/tag/v1.0.9)
 - [v1.0.8](https://github.com/360modder/up-to-pypi/releases/tag/v1.0.8)
 
