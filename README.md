@@ -15,9 +15,19 @@ Currently It Only Supports Windows
 - [PyPi](https://pypi.org/project/up-to-pypi/ "up-to-pypi PyPi Homepage")
 - [Github](https://github.com/360modder/up-to-pypi/ "up-to-pypi Github Homepage")
 
-## Installation
+## Installations
+
+### From PyPi
 
 ```pip install up-to-pypi```
+
+### From GitHub
+
+```
+git clone https://github.com/360modder/up-to-pypi.git
+cd up-to-pypi
+python setup.py install
+```
 
 ## Usage (Command Line)
 
