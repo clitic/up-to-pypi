@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>248</width>
+    <width>292</width>
     <height>469</height>
    </rect>
   </property>
@@ -40,10 +40,10 @@
       <item row="1" column="1">
        <widget class="QCheckBox" name="c4">
         <property name="toolTip">
-         <string>Upgrade setuptools to latest version</string>
+         <string>Upgrade setuptools and wheel to latest version</string>
         </property>
         <property name="text">
-         <string>Upgrade Setuptools</string>
+         <string>Upgrade Setuptools + Wheel</string>
         </property>
         <property name="checked">
          <bool>false</bool>
@@ -59,7 +59,7 @@
          <string>Upload At PyPi</string>
         </property>
         <property name="checked">
-         <bool>true</bool>
+         <bool>false</bool>
         </property>
        </widget>
       </item>
@@ -78,7 +78,7 @@
          <string>Create Wheel</string>
         </property>
         <property name="checked">
-         <bool>true</bool>
+         <bool>false</bool>
         </property>
         <property name="tristate">
          <bool>false</bool>
@@ -229,15 +229,16 @@ p, li { white-space: pre-wrap; }
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>248</width>
+     <width>292</width>
      <height>21</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menuOpen">
+   <widget class="QMenu" name="menuFile">
     <property name="title">
-     <string>Open</string>
+     <string>File</string>
     </property>
     <addaction name="actionOpen_Project_Folder"/>
+    <addaction name="actionSave_A_bat_File"/>
    </widget>
    <widget class="QMenu" name="menuSettings">
     <property name="title">
@@ -260,15 +261,23 @@ p, li { white-space: pre-wrap; }
     <property name="title">
      <string>Help</string>
     </property>
+    <addaction name="actionReport_A_Bug"/>
+    <addaction name="actionRequest_New_Features"/>
+    <addaction name="actionNeed_Help"/>
+    <addaction name="separator"/>
     <addaction name="actionAbout_Up_To_PyPi"/>
    </widget>
    <widget class="QMenu" name="menuOptions">
     <property name="title">
      <string>Options</string>
     </property>
+    <addaction name="actionUpload"/>
+    <addaction name="actionAbort"/>
     <addaction name="actionClear_Text_Fields"/>
+    <addaction name="separator"/>
+    <addaction name="actionAdvance_Wheel_Creator"/>
    </widget>
-   <addaction name="menuOpen"/>
+   <addaction name="menuFile"/>
    <addaction name="menuOptions"/>
    <addaction name="menuSettings"/>
    <addaction name="menuHelp"/>
@@ -333,6 +342,44 @@ p, li { white-space: pre-wrap; }
    </property>
    <property name="text">
     <string>Save PyPi Settings</string>
+   </property>
+  </action>
+  <action name="actionAdvance_Wheel_Creator">
+   <property name="text">
+    <string>Advance Wheel Creator</string>
+   </property>
+  </action>
+  <action name="actionReport_A_Bug">
+   <property name="text">
+    <string>Report A Bug</string>
+   </property>
+  </action>
+  <action name="actionRequest_New_Features">
+   <property name="text">
+    <string>Request New Features</string>
+   </property>
+  </action>
+  <action name="actionNeed_Help">
+   <property name="text">
+    <string>Need Help ?</string>
+   </property>
+  </action>
+  <action name="actionUpload">
+   <property name="text">
+    <string>Upload</string>
+   </property>
+  </action>
+  <action name="actionAbort">
+   <property name="text">
+    <string>Abort</string>
+   </property>
+  </action>
+  <action name="actionSave_A_bat_File">
+   <property name="text">
+    <string>Save A .bat File</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
    </property>
   </action>
  </widget>
