@@ -73,6 +73,6 @@ pip install PyQt5 qtmodern qtpy twine
 
 ## License
 
-© 2020 360modder
+© 2021 360modder
 
 This repository is licensed under the MIT license. See LICENSE for details.
