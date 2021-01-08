@@ -7,3 +7,6 @@ def main():
 
 def awc():
 	os.startfile(f"{abs_path}\\wheel_window.pyw")
+
+def crmod():
+	os.startfile(f"{abs_path}\\crmod_window.pyw")

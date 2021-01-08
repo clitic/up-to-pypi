@@ -192,6 +192,8 @@ class Ui_MainWindow(object):
         self.actionAbort.setObjectName("actionAbort")
         self.actionSave_A_bat_File = QtWidgets.QAction(MainWindow)
         self.actionSave_A_bat_File.setObjectName("actionSave_A_bat_File")
+        self.actionModule_Creator = QtWidgets.QAction(MainWindow)
+        self.actionModule_Creator.setObjectName("actionModule_Creator")
         self.menuFile.addAction(self.actionOpen_Project_Folder)
         self.menuFile.addAction(self.actionSave_A_bat_File)
         self.menuThemes.addSeparator()
@@ -211,6 +213,7 @@ class Ui_MainWindow(object):
         self.menuOptions.addAction(self.actionClear_Text_Fields)
         self.menuOptions.addSeparator()
         self.menuOptions.addAction(self.actionAdvance_Wheel_Creator)
+        self.menuOptions.addAction(self.actionModule_Creator)
         self.menubar.addAction(self.menuFile.menuAction())
         self.menubar.addAction(self.menuOptions.menuAction())
         self.menubar.addAction(self.menuSettings.menuAction())
@@ -253,6 +256,7 @@ class Ui_MainWindow(object):
         self.actionClear_Text_Fields.triggered.connect(lambda: self.pypi_username.clear())
         self.actionClear_Text_Fields.triggered.connect(lambda: self.pypi_password.clear())
         self.actionAdvance_Wheel_Creator.triggered.connect(lambda: self.open_awc())
+        self.actionModule_Creator.triggered.connect(lambda: self.open_crmod())
 
         # Moving Window To Center
         qr = QtCore.QRect(0, 0, 640, 470)
@@ -308,6 +312,7 @@ class Ui_MainWindow(object):
         self.actionSave_A_bat_File.setShortcut(_translate("MainWindow", "Ctrl+S"))
         self.output.setText(_translate("WheelWindow", "Output Terminal :-"))
         self.output_box.setText(_translate("WheelWindow", "NULL"))
+        self.actionModule_Creator.setText(_translate("MainWindow", "Module Creator"))
 
         self.output.deleteLater()
         self.output_box.deleteLater()
@@ -501,7 +506,7 @@ class Ui_MainWindow(object):
         msg = QMessageBox()
         msg.setWindowTitle("About Up To PyPi")
         msg.setIcon(QMessageBox.Information)
-        msg.setText("Up To PyPi v1.0.9")
+        msg.setText("Up To PyPi v2.0.1")
         msg.setInformativeText("Developed By 360modder")
         msg.setDetailedText("Build With Python & PyQt5")
         msg.exec_()
@@ -558,6 +563,10 @@ class Ui_MainWindow(object):
 
     def open_awc(self):
         os.startfile(f"{abs_path}\\wheel_window.pyw")
+        self.save_settings(self)
+
+    def open_crmod(self):
+        os.startfile(f"{abs_path}\\crmod_window.pyw")
         self.save_settings(self)
 
 if __name__ == "__main__":
