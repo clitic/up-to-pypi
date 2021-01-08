@@ -503,7 +503,7 @@ class Ui_MainWindow(object):
         msg = QMessageBox()
         msg.setWindowTitle("About Up To PyPi")
         msg.setIcon(QMessageBox.Information)
-        msg.setText("Up To PyPi v2.0.1")
+        msg.setText("Up To PyPi v2.0.2")
         msg.setInformativeText("Developed By 360modder")
         msg.setDetailedText("Build With Python & PyQt5")
         msg.exec_()
