@@ -12,7 +12,7 @@ if __name__ == '__main__':
     if plat.lower().startswith("win") == True:
         setup(
             name="up_to_pypi",
-            version="2.0.1",
+            version="2.0.2",
             description="A PyQt5 GUI Utility For Uploading Packages To PyPi",
             long_description=README,
             long_description_content_type="text/markdown",
