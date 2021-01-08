@@ -12,8 +12,8 @@ if __name__ == '__main__':
     if plat.lower().startswith("win") == True:
         setup(
             name="up_to_pypi",
-            version="2.0.0",
-            description="A PyQt5 GUI Uploder For Uploading Packages To PyPi",
+            version="2.0.1",
+            description="A PyQt5 GUI Utility For Uploading Packages To PyPi",
             long_description=README,
             long_description_content_type="text/markdown",
             keywords=['gui', 'upload', 'pypi', 'twine', 'uploader', 'PyQt5'],
@@ -36,11 +36,10 @@ if __name__ == '__main__':
                 "console_scripts": [
                     "up-to-pypi=up_to_pypi.launcher:main",
                     "awc=up_to_pypi.launcher:awc",
+                    "crmod=up_to_pypi.launcher:crmod",
                 ]
             },
         )
     else:
         print("Distributions Are Only Available For Windows . . .")
-        print("But You Can Port It To Any Platform . . .\n")
-        print("View At :\nhttps://github.com/360modder/up-to-pypi/blob/main/up_to_pypi/main.pyw")
         exit()
