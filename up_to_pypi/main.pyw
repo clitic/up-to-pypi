@@ -412,15 +412,12 @@ class Ui_MainWindow(object):
                 self.commands_box.setText(_translate("MainWindow", readings))
 
     def create_bat(self, location):
-    	with open (location, "w", encoding="utf-8") as f:
-    		module_dir = opf_folder_location.replace("/", "\\")
-    		f.write(f'cd /d "{module_dir}"\n')
-    		for commands in self.all_commands():
-    			f.write(f"{commands}\n")
-    			f.write("echo off\n"
-		        "echo =======\n"
-		        "echo FINISHED\n"
-		        "echo =======\n")
+        with open (location, "w", encoding="utf-8") as f:
+            module_dir = opf_folder_location.replace("/", "\\")
+            f.write(f'cd /d "{module_dir}"\n')
+            for commands in self.all_commands():
+                f.write(f"{commands}\n")
+            f.write("echo off\necho =======\necho FINISHED\necho =======\n")
 
     def upload_module(self):
     	global loaded
