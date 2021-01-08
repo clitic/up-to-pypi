@@ -67,7 +67,7 @@ pip install PyQt5 qtmodern qtpy twine
 
 ## Changelogs
 
-- [v2.0.1](https://github.com/360modder/up-to-pypi/releases/tag/v2.0.1)
+- [v2.0.2](https://github.com/360modder/up-to-pypi/releases/tag/v2.0.2)
 - [v2.0.0](https://github.com/360modder/up-to-pypi/releases/tag/v2.0.0)
 - [v1.0.9](https://github.com/360modder/up-to-pypi/releases/tag/v1.0.9)
 - [v1.0.8](https://github.com/360modder/up-to-pypi/releases/tag/v1.0.8)
