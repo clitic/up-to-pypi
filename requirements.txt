@@ -1,0 +1,4 @@
+PyQt5==5.15.1
+qtmodern==0.2.0
+twine
+QtPy==1.9.0
