@@ -1,12 +1,13 @@
 import os
+import platform
+import subprocess
 
-abs_path = os.path.dirname(__file__)
+
+is_windows = platform.system().lower().startswith("win")
 
 def main():
-	os.startfile(f"{abs_path}\\main.pyw")
+    subprocess.run(["python" if is_windows else "python3", os.path.join(os.path.dirname(os.path.abspath(__file__)), "main.py")])
 
-def awc():
-	os.startfile(f"{abs_path}\\wheel_window.pyw")
 
-def crmod():
-	os.startfile(f"{abs_path}\\crmod_window.pyw")
+if __name__ == "__main__":
+    main()

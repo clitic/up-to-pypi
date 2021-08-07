@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CRModWindow</class>
+ <widget class="QMainWindow" name="CRModWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>419</width>
+    <height>267</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Module Creater</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>up-to-pypi-main/up_to_pypi/images/upload.png</normaloff>up-to-pypi-main/up_to_pypi/images/upload.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="module_version">
+      <property name="placeholderText">
+       <string>Module Version</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLineEdit" name="author">
+      <property name="placeholderText">
+       <string>Author Name</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="0" colspan="2">
+     <widget class="QPushButton" name="build_files">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>Build Files</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="repo_url">
+      <property name="placeholderText">
+       <string>URL</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLineEdit" name="author_email">
+      <property name="placeholderText">
+       <string>Author Email</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLineEdit" name="module_name">
+      <property name="placeholderText">
+       <string>Module Name</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0" colspan="2">
+     <widget class="QPushButton" name="choose_location">
+      <property name="text">
+       <string>Choose Location</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLineEdit" name="description">
+      <property name="placeholderText">
+       <string>Small Description</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>419</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionChoose_Location">
+   <property name="text">
+    <string>Choose Location</string>
+   </property>
+  </action>
+  <action name="actionBuild_Files">
+   <property name="text">
+    <string>Build Files</string>
+   </property>
+  </action>
+  <action name="actionClear_Text_Fields">
+   <property name="text">
+    <string>Clear Text Fields</string>
+   </property>
+  </action>
+  <action name="actionAbout_Module_Creator">
+   <property name="text">
+    <string>About Module Creator</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
