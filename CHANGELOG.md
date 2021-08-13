@@ -1,8 +1,8 @@
 # CHANGELOG.md
 
-> This project was not versioned properly before the v2.0.4 release
+> This project was not versioned properly before the v2.1.4 release
 
-## 2.0.4 (13/08/2021)
+## 2.1.4 (13/08/2021)
 
 Features:
 
@@ -27,6 +27,7 @@ Fixes:
 
 - All windows are loaded at time of start up
 - External call to pythonw is switched to internal python call while run the script through console script
+- Password hide in commands preview
 
 ## 2.0.2 (08/01/2021)
 
