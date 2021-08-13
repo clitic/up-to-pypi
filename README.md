@@ -8,7 +8,7 @@
   <a href="https://github.com/360modder/up-to-pypi"><img src="https://img.shields.io/github/repo-size/360modder/up-to-pypi.svg" alt="Repository Size"></a>
 </p>
 
-A gui utility for uploading packages to pypi. Now supports **linux** too.
+A gui utility for uploading packages to pypi, creating modules and wheel distributions.
 
 ## Installations
 
@@ -28,12 +28,19 @@ pip install https://github.com/360modder/up-to-pypi/archive/master.zip
 $ up-to-pypi
 ```
 
-## GUI Preview
+This command will run the gui from current terminal.
+
+## Snapshots
 
 <p align="center">
-  <img src="preview/preview-image-main.jpg" alt="preview-image-main">
-  <img src="preview/preview-image-all.jpg" alt="preview-image-all">
+  <img src="https://github.com/360modder/up-to-pypi/blob/master/preview/preview-image-main.jpg" alt="preview-image-main" height=300>
+  <img src="https://github.com/360modder/up-to-pypi/blob/master/preview/preview-image-all.jpg" alt="preview-image-all" height=300>
 </p>
+
+## Links
+
+- [pypi/up-to-pypi](https://pypi.org/project/up-to-pypi/)
+- [CHANGELOG.md](CHANGELOG.md)
 
 ## License
 
