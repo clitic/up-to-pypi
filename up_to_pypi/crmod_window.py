@@ -2,8 +2,8 @@ import os
 import sys
 from PyQt5 import QtGui, QtWidgets
 from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox
-from components.crmod_ui import Ui_CRModWindow
-import utils
+from .components.crmod_ui import Ui_CRModWindow
+from . import utils
 
 
 class CRModWindow(QMainWindow):

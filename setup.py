@@ -11,7 +11,7 @@ with open("requirements.txt") as f:
 
 setup(
     name = "up_to_pypi",
-    version = "2.1.4",
+    version = "2.1.5",
     description = "a gui utility for uploading packages to pypi",
     long_description = README,
     long_description_content_type = "text/markdown",
@@ -39,7 +39,7 @@ setup(
     install_requires = REQUIREMENTS,
     entry_points = {
         "console_scripts": [
-            "up-to-pypi = up_to_pypi.launcher:main",
+            "up-to-pypi = up_to_pypi.main:main",
         ]
     },
 )

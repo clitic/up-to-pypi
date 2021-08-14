@@ -7,10 +7,10 @@ import qtmodern.windows
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtCore import QThread
 from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox
-from components.main_ui import Ui_MainWindow
-from wheel_window import WheelWindow
-from crmod_window import CRModWindow
-import utils
+from .components.main_ui import Ui_MainWindow
+from .wheel_window import WheelWindow
+from .crmod_window import CRModWindow
+from . import utils
 
 
 class MainWindow(QMainWindow):
@@ -263,8 +263,9 @@ class MainWindow(QMainWindow):
         self.preview_commands()
         self.setStatusTip("Settings Resetted To Default")
 
+def main():
+    global app, window, WheelWindowObj, CRModWindowObj
 
-if __name__ == "__main__":
     app = QApplication(sys.argv)
     qtmodern.styles.light(app)
     
@@ -276,3 +277,8 @@ if __name__ == "__main__":
 
     window.show()
     sys.exit(app.exec_())
+
+
+# python -m up_to_pypi.main
+if __name__ == "__main__":
+    main()

@@ -6,8 +6,8 @@ import shutil
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtCore import QThread
 from PyQt5.QtWidgets import QApplication, QMainWindow, QMessageBox
-from components.wheel_ui import Ui_WheelWindow
-import utils
+from .components.wheel_ui import Ui_WheelWindow
+from . import utils
 
 
 class WheelWindow(QMainWindow):

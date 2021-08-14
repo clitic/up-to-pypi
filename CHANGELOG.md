@@ -2,6 +2,18 @@
 
 > This project was not versioned properly before the v2.1.4 release
 
+
+## 2.1.5 (14/08/2021)
+
+Changes:
+
+- No script launcher, now gui is a direct module
+- `up-to-pypi` console script binded to `main.py` -> `main` function
+
+Fixes:
+
+- `sudo up-to-pypi` bugfix for linux, now runs without sudo permissions
+
 ## 2.1.4 (13/08/2021)
 
 Features:

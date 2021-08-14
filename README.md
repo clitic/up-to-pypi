@@ -30,11 +30,13 @@ $ up-to-pypi
 
 This command will run the gui from current terminal.
 
+> Note: Try using `sudo up-to-pypi` in linux, if gui fails to execute commands.
+
 ## Snapshots
 
 <p align="center">
-  <img src="https://github.com/360modder/up-to-pypi/blob/master/preview/preview-image-main.jpg" alt="preview-image-main" height=300>
-  <img src="https://github.com/360modder/up-to-pypi/blob/master/preview/preview-image-all.jpg" alt="preview-image-all" height=300>
+  <img src="https://github.com/360modder/up-to-pypi/blob/master/preview/preview-image-main.jpg" alt="preview-image-main">
+  <img src="https://github.com/360modder/up-to-pypi/blob/master/preview/preview-image-all.jpg" alt="preview-image-all">
 </p>
 
 ## Links
