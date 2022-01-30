@@ -76,9 +76,13 @@ class WheelWindow(QMainWindow):
         self.preview_commands()
 
     def command_merge(self, apis, buildno, platform):
-        command = []
-        command.append("python" if utils.is_windows else "python3")
-        command.extend(["setup.py", "sdist", "bdist_wheel"])
+        command = [
+            "python" if utils.is_windows else "python3",
+            'setup.py',
+            'sdist',
+            'bdist_wheel',
+        ]
+
         if apis != "":
             command.append(apis)
         if buildno != "":
@@ -88,29 +92,18 @@ class WheelWindow(QMainWindow):
         return " ".join(command)
 
     def all_commands(self):
-        commands = []
-        commands.append(f'cd{" /d " if utils.is_windows else " "}"{self.opf_folder_location}"')
+        commands = [
+            f'cd{" /d " if utils.is_windows else " "}"{self.opf_folder_location}"'
+        ]
+
         buildno = f"--build-number {self.ui.cu3val.text()}" if self.ui.cu3.isChecked() else ""
 
         if self.ui.cu2.isChecked():
             apis = f"--py-limited-api {self.ui.cu2val.text()} --python-tag {self.ui.cu2val.text()}"
         else:
-            all_api = []
-            if self.ui.c3.isChecked():
-                all_api.append("cp39")
-            if self.ui.c8.isChecked():
-                all_api.append("cp38")
-            if self.ui.c13.isChecked():
-                all_api.append("cp37")
-            if self.ui.c17.isChecked():
-                all_api.append("cp36")
-            if self.ui.c19.isChecked():
-                all_api.append("cp27")
-            all_api = ".".join(all_api)
-            apis = "" if len(all_api) == 0 else f"--py-limited-api {all_api} --python-tag {all_api}"
-
+            apis = self._extracted_from_all_commands_9()
         if self.ui.cu1.isChecked():
-            commands.append(self.command_merge(apis, buildno, f"--plat-name {self.ui.cu1val.text()}"))    			
+            commands.append(self.command_merge(apis, buildno, f"--plat-name {self.ui.cu1val.text()}"))
         if self.ui.c5.isChecked():
             commands.append(self.command_merge(apis, buildno, "--universal"))
         if self.ui.c1.isChecked():
@@ -135,15 +128,36 @@ class WheelWindow(QMainWindow):
             commands.append(self.command_merge(apis, buildno, "--plat-name macosx_10_9_x86_64"))
 
         return commands
+
+    # TODO Rename this here and in `all_commands`
+    def _extracted_from_all_commands_9(self):
+        all_api = []
+        if self.ui.c3.isChecked():
+            all_api.append("cp39")
+        if self.ui.c8.isChecked():
+            all_api.append("cp38")
+        if self.ui.c13.isChecked():
+            all_api.append("cp37")
+        if self.ui.c17.isChecked():
+            all_api.append("cp36")
+        if self.ui.c19.isChecked():
+            all_api.append("cp27")
+        all_api = ".".join(all_api)
+        return (
+            ""
+            if len(all_api) == 0
+            else f"--py-limited-api {all_api} --python-tag {all_api}"
+        )
         
     def post_commands(self):
-        self.setStatusTip(f"Running Post Commands")
+        self.setStatusTip("Running Post Commands")
 
         try:
             for folder in os.listdir(self.opf_folder_location):
-                if self.ui.c10.isChecked():
-                    if "build" in folder or "egg-info" in folder:
-                        shutil.rmtree(utils.platform_path(os.path.join(self.opf_folder_location, folder)))
+                if self.ui.c10.isChecked() and (
+                    "build" in folder or "egg-info" in folder
+                ):
+                    shutil.rmtree(utils.platform_path(os.path.join(self.opf_folder_location, folder)))
 
             for whl in glob.glob(utils.platform_path(os.path.join(self.opf_folder_location, "dist/*.whl"))):
                 if self.ui.c14.isChecked():
@@ -218,7 +232,7 @@ class WheelWindow(QMainWindow):
         msg.setWindowTitle("About Advance Wheel Creator")
         msg.setIcon(QMessageBox.Information)
         msg.setText("Advance Wheel Creator v0.1.0")
-        msg.setInformativeText("Developed By 360modder")
+        msg.setInformativeText("Developed By clitic")
         msg.exec_()
 
     @utils.traceback_catch

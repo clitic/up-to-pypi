@@ -7,7 +7,7 @@ from PyQt5.QtCore import QObject, pyqtSignal
 from PyQt5.QtWidgets import QMessageBox
 
 
-is_windows = platform.system().lower().startswith("win")
+is_windows = sys.platform.lower().startswith("win")
 
 class SubprocessWorker(QObject):
     finished = pyqtSignal()

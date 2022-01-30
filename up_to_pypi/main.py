@@ -60,7 +60,7 @@ class MainWindow(QMainWindow):
         self.ui.actionLight.triggered.connect(lambda: self.light_theme())
         self.ui.actionDark.triggered.connect(lambda: self.dark_theme())
         self.ui.actionReset_To_Default.triggered.connect(lambda: self.reset_settings())
-        self.ui.actionReport_A_Bug.triggered.connect(lambda: webbrowser.open("https://github.com/360modder/up-to-pypi/issues", new=2))
+        self.ui.actionReport_A_Bug.triggered.connect(lambda: webbrowser.open("https://github.com/clitic/up-to-pypi/issues", new=2))
         self.ui.actionAbout_Up_To_PyPi.triggered.connect(lambda: self.about_uptopypi())
         self.ui.actionAbout_Qt.triggered.connect(lambda _: QApplication.aboutQt())
         # mapping main window events
@@ -153,7 +153,7 @@ class MainWindow(QMainWindow):
         msg.setWindowTitle("About Up To PyPi")
         msg.setIcon(QMessageBox.Information)
         msg.setText("Up To PyPi v2.1.4")
-        msg.setInformativeText("Developed By 360modder")
+        msg.setInformativeText("Developed By clitic")
         msg.setDetailedText("Build With Python & PyQt5")
         msg.exec_()
 

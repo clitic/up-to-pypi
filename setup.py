@@ -16,9 +16,9 @@ setup(
     long_description = README,
     long_description_content_type = "text/markdown",
     keywords = ["pypi", "uploader", "wheel"],
-    url = "https://github.com/360modder/up-to-pypi",
-    author = "360modder",
-    author_email = "apoorv9450@gmail.com",
+    url = "https://github.com/clitic/up-to-pypi",
+    author = "clitic",
+    author_email = "clitic21@gmail.com",
     license = "MIT",
     python_requires = ">= 3.6",
     classifiers = [
